@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "WebBridge-Kit",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
         .library(name: "WBKCore", targets: ["WBKCore"]),
         .library(name: "WBKBridge", targets: ["WBKBridge"]),
